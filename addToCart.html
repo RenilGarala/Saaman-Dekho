@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-shop Cart page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- header part start -->
+    <header class="section-navbar">
+        <!-- section part start -->
+        <section class="top_txt">
+          <div class="head container">
+            <div class="head_txt">
+              <p>Free shopping, 7-day return or refund guarantee.</p>
+            </div>
+            <div class="sign_in_up">
+              <a href="#">SIGN IN</a>
+              <a href="#">SIGN UP</a>
+            </div>
+          </div>
+        </section>
+        <!-- section part end -->
+  
+        <!-- navbar part start -->
+        <div class="container head-navbar">
+          <div class="navbar_brand">
+            <a href="index.html" class="navbar-logo">
+              <h2 style="color: rgb(48, 48, 48);">E-SHOP</h2>
+            </a>
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li class="nav-item">
+                <a href="home.html" class="nav-link">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="products.html" class="nav-link">products</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="addToCart.html"
+                  class="nav-link add-to-cart-button"
+                  id="cartValue"
+                >
+                  <i class="fa-solid fa-cart-shopping"> 0</i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- navbar part end -->
+    </header>
+    <!-- header part end -->
+
+    <section class="addToCartElement">
+        <div class="container">
+
+            <section>
+                <div class="productCartContainer" id="productCartContainer">
+                    
+                </div>
+            </section>
+
+            <section class="productCartTotalElem">
+                <div class="productCartTotalElement">
+                    <p class="totalHeading">Select Offer Summery</p>
+                    <div class="productOrderTotal">
+                        <div>
+                            <p>Sub Total:</p>
+                            <p class="productSubTotal">0</p>
+                        </div>
+                        <div>
+                            <p>Tax:</p>
+                            <p class="productSubTotal">₹50</p>
+                        </div>
+                        
+                        <hr/>
+                        <div>
+                            <p>Final Total:</p>
+                            <p class="productFinalTotal">0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- template  -->
+    <template id="productCartTemplate">
+        <div class="cards productCards" id="cardValue">
+            <article class="information [card]">
+                <div>
+                    <span class="category"></span>
+                </div>
+                <div class="cartImageContainer">
+                    <img class="productCartImage" srs="" alt=""/>
+                </div>
+          
+                    <h2 class="productName"></h2>
+                    <p class="productPrice"></p>
+            
+                <div class="stockElement">
+                    <button class="cartIncrement">+</button>
+                    <p class="ProductQuantity" data-quantity="1">1</p>
+                    <button class="cartDecrement">-</button>
+                </div>
+    
+                <button class="add-to-cart-button remove-to-cart-button">Remove</button>
+            </article>
+        </div>
+    </template>
+    <!-- template end  -->
+
+    <!-- footer section start -->
+    <footer class="section-footer">
+        <div class="footer-container container">
+          <div class="content_1">
+            <img src="./public/images/E-shop-logo.jpeg" alt="" srcset="" />
+            <p>
+              Walcome to E-shop, your ultimate destination for cutting-edge
+              gadgets!
+            </p>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-google-pay"></i>
+          </div>
+          <div class="content_2">
+            <h4>SHOPPING</h4>
+            <a href="#">Computer Store</a>
+            <a href="#">Laptop Store</a>
+            <a href="#">Accesories</a>
+            <a href="#">Sales & Discount</a>
+          </div>
+          <div class="content_3">
+            <h4>Experience</h4>
+            <a href="#">Contect Us</a>
+            <a href="#">Payment Method</a>
+            <a href="#">Delivery</a>
+            <a href="#">Return and Exchange</a>
+          </div>
+          <div class="content_3">
+            <h4>NEW SLETTER</h4>
+            <p>Be the first to know about new<br />arrivals, sales & promos!</p>
+            <div class="f-mail">
+              <input type="email" placeholder="Your Email">
+              <i class="bx bx-envelope"></i>
+            </div>
+            <hr/>
+          </div>
+        </div>
+        <div class="f-design">
+          <div class="f-design-text">
+            <p>Design and code by enil patel</p>
+          </div>
+        </div>
+    </footer>
+    <!-- footer section end-->
+
+
+    <script type="module" src="showAddToCartCards.js"></script>
+</body>
+    
+</html>

@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "name":"Laptop",
+        "category":"computers",
+        "brand":"Apple",
+        "price":999.99,
+        "stock":50,
+        "discription":"powerful laptop with core i5 processor, 8GB/512GB SSD, and a 14-inch display",
+        "image":"../images/laptop_hp.png"
+    },
+    {
+        "id":2,
+        "name":"Smartphone",
+        "category":"Mobile",
+        "brand":"Apple",
+        "price":499.99,
+        "stock":100,
+        "discription":"Feature-rich smartphone with a 6.2-inch screen, 12MP dual camera, 128GB storage.",
+        "image":"../images/mobile.png"
+    },
+    {
+        "id":3,
+        "name":"Wireless Headphones",
+        "category":"Audio",
+        "brand":"Apple",
+        "price":149.99,
+        "stock":30,
+        "discription":"High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color.",
+        "image":"../images/headphone.png"
+    },
+    {
+        "id":4,
+        "name":"Watches",
+        "category":"Wearables",
+        "brand":"Apple",
+        "price":199.99,
+        "stock":20,
+        "discription":"Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features.",
+        "image":"../images/watch.png"
+    },
+    {
+        "id":5,
+        "name":"Speakers",
+        "category":"Audio",
+        "brand":"Apple",
+        "price":149.99,
+        "stock":30,
+        "discription":"High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color.",
+        "image":"../images/speaker.png"
+    },
+    {
+        "id":6,
+        "name":"Television",
+        "category":"Video",
+        "brand":"Sony",
+        "price":4999.99,
+        "stock":20,
+        "discription":"SmartTV with a 43-inch FHD display, Feature-rich TV , fitness tracking features",
+        "image":"../images/television.png"
+    }
+]
